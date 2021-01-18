@@ -1,0 +1,37 @@
+/*solution1*/
+ALGORITHM sommdistincte
+VAR
+i,j;somme:INTEGER
+tab1 : ARRAY_OF integer20;
+tab2: : ARRAY_OF integer[30];
+BEGIN
+FOR i FROM 1 TO n STEP 1  DO
+FOR j FROM 1 TO n STEP 1  DO
+IF (tab1[1]!=tab2[j]) THEN
+somme:=somme+tab1[i];
+
+END_IF
+END_FOR
+END_FOR
+write("le somme distincte des deux tableau est", somme);
+END
+
+
+/*pribleme 2*/
+
+ALGORITHM sommeoverlaping
+i,j,n,m,somme:INTEGER
+tab1 : ARRAY_OF integer[20];
+tab2: : ARRAY_OF integer[30];
+BEGIN
+FOR i FROM 1 TO n STEP 1  DO
+FOR j FROM 1 TO m STEP 1  DO
+IF (tab1[1]=tab2[j]) THEN
+somme:=somme+tab1[i]+tab2[j];
+write (" le somme overlaping est" ;somme )
+else
+write("le somme overlapping est egale 0")
+END_IF
+END_FOR
+END_FOR
+END
